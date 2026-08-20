@@ -1,0 +1,29 @@
+{
+  "name": "ifortyninestack",
+  "displayName": "Ifortyninestack",
+  "version": "0.1.0",
+  "description": "Rails and React engineering workflows for work intake, planning, implementation, review, verification, and delivery.",
+  "author": {
+    "name": "Luke Beck"
+  },
+  "homepage": "https://github.com/lukewbeck/ifortyninestack",
+  "repository": "https://github.com/lukewbeck/ifortyninestack",
+  "keywords": [
+    "engineering-workflow",
+    "rails",
+    "react",
+    "inertia",
+    "code-review"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "workflow",
+    "planning",
+    "review",
+    "verification",
+    "delivery"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "rules": "./rules/"
+}
