@@ -1,0 +1,19 @@
+---
+description: Ruby and Rails implementation standards
+globs:
+  - "**/*.rb"
+  - "**/*.rake"
+alwaysApply: false
+---
+
+# Ruby and Rails
+
+- Use Rails conventions before you add architecture.
+- Keep controllers focused on authentication, authorization, parameters, orchestration, and rendering.
+- Put domain behavior near the data. Use a service object only for a real multi-step workflow or system boundary.
+- Write small methods with intention-revealing names and obvious failure behavior.
+- Prefer persistence methods whose failure behavior matches the workflow. Use bang methods when failure must stop the work.
+- Use `update_columns` only when bypassing validations, callbacks, and timestamps is intentional.
+- Avoid metaprogramming, broad rescues, hidden side effects, and incidental load-order dependencies.
+- Follow Zeitwerk naming and directory conventions.
+- Run StandardRB on touched Ruby files. Do not reformat unrelated files.

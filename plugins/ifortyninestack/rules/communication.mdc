@@ -1,0 +1,35 @@
+---
+description: Plain technical writing for agent responses and engineering artifacts
+alwaysApply: true
+---
+
+# Communication
+
+Use plain, direct technical prose.
+
+- Lead with the outcome. Do not add a preamble.
+- Use short declarative sentences. Keep one thought or instruction in each sentence.
+- Use active voice and present tense when possible.
+- Put a condition before the instruction that depends on it.
+- Use the same name for the same thing throughout the text.
+- Prefer common words. Use repository symbols, paths, and domain terms exactly.
+- Remove filler, slogans, aphorisms, praise, and repeated conclusions.
+- Do not use an em dash. Use a period or comma.
+- Keep every warning, precondition, blocker, and uncertainty that the reader needs to act safely.
+- If the user asks for text they will paste, return only that text.
+- Use headings and lists only when they make the result easier to scan.
+- State evidence separately from inference. Cite only sources you inspected.
+
+## Landed work
+
+Name titles, commits, comments, and pull request bodies by what landed.
+
+Chat, rejected extras, and later corrections stay in chat.
+
+If a stranger would learn a rejected idea from the title or comment, rewrite. That is a negative ontology. The work is defined by an absence.
+
+Keep an absence only when a reviewer needs it to judge safety, compatibility, or a ticket-scope gap in the shipped contract. Write that as one short fact.
+
+Bad title: `Add invoice export (no CSV fallback)`
+
+Good title: `Add invoice PDF export`

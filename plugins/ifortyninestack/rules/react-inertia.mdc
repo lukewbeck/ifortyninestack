@@ -1,0 +1,23 @@
+---
+description: React, TypeScript, and Inertia implementation standards
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
+alwaysApply: false
+---
+
+# React, TypeScript, and Inertia
+
+- Keep components small, composable, and explicit.
+- Prefer local state, existing shared primitives, and current repository patterns.
+- Do not add a frontend dependency unless the existing stack cannot solve the problem.
+- Keep imports at the top of the module.
+- Handle discriminated unions and enums with an exhaustive `never` check.
+- Keep policy, permissions, feature access, and domain configuration on the server.
+- Treat Inertia props and JSON as server-client contracts. Update Rails, TypeScript types, React usage, and tests together.
+- Keep the initial server props and the first client render consistent.
+- Give important asynchronous paths clear loading, success, and error states.
+- Do not show durable or server-confirmed state before the server confirms it.
+- Scope CSS to the component or an explicit opt-in boundary.

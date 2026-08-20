@@ -1,0 +1,21 @@
+---
+description: Core engineering standards for Rails and React work
+alwaysApply: true
+---
+
+# Engineering baseline
+
+- Read the relevant code, tests, configuration, and repository instructions before you edit.
+- Define the requested outcome and the evidence that will prove it.
+- Make the smallest coherent change that fully solves the problem.
+- Check, in order, whether the work is needed, the standard library covers it, the platform covers it, or an installed dependency covers it.
+- Prefer deletion, reuse, and direct code over new dependencies, layers, flags, services, or abstractions.
+- Extract an abstraction only when the repeated shape is stable and the new boundary reduces future change cost.
+- Follow repository conventions before you introduce a new pattern.
+- Reproduce bugs and identify the cause before you implement a fix.
+- Keep diffs scoped to the ticket or request. Do not include unrelated cleanup.
+- Test non-trivial behavior at the narrowest reliable level. Include a meaningful edge case and failure behavior when failure matters.
+- Inspect test output. Do not claim that a check passed unless you ran it and read the result.
+- State what remains unverified and why.
+- Delivered work must be merge-ready. The remaining human action is the merge decision, not leftover fixes.
+- Do not merge code. A human decides when to merge.

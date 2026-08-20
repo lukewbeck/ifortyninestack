@@ -1,0 +1,20 @@
+---
+description: Database migration, backfill, and schema safety standards
+globs:
+  - "**/db/migrate/**/*.rb"
+  - "**/db/schema.rb"
+  - "**/db/structure.sql"
+alwaysApply: false
+---
+
+# Migrations and schema
+
+- Use one forward migration path. Avoid add, drop, and recreate churn.
+- Assess table size, lock duration, deploy order, and mixed-version application behavior.
+- Separate schema changes, backfills, and constraint validation when one deploy cannot perform them safely.
+- Backfill data before you validate a constraint that assumes the data exists.
+- Use `ActiveRecord::IrreversibleMigration` when rollback cannot restore a truthful prior state.
+- Every schema change must have a migration in the same change set.
+- Do not preserve schema changes copied from another branch without the matching migration.
+- Verify the schema version matches the newest migration before delivery.
+- State rollback limits and the safe recovery path in the pull request.

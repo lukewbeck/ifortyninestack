@@ -1,0 +1,19 @@
+---
+description: Safety, data, authorization, and human-approval requirements
+alwaysApply: true
+---
+
+# Public trust and safety
+
+Software can affect customers, operators, records, and trust. Treat production data and access boundaries as high risk.
+
+- Preserve tenant boundaries, authorization, secrets, data invariants, and shipped contracts.
+- Treat all client input as untrusted. Validate input and enforce authorization on the server.
+- Use least privilege. Never log or expose tokens, secrets, raw personal data, or customer content without an approved need.
+- Keep customer writes independent from best-effort notifications and other external side effects.
+- Treat migrations, backfills, background jobs, external APIs, and deploy configuration as production risks.
+- State migration, job, operational, deploy, rollback, and compatibility impact for any relevant change.
+- Ask before destructive data work, breaking changes, non-obvious architecture changes, auth changes, public endpoints, permission changes, or cross-tenant access.
+- Ask before a deploy, a production-platform write, a force push, or any action that can affect customers.
+- If a deploy or boot fails, stop after diagnosis. Report the failure and the proposed fix. Do not patch and redeploy without approval.
+- Never commit credentials, key files, tokens, or decrypted secrets.

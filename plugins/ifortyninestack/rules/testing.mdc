@@ -1,0 +1,24 @@
+---
+description: Test design and verification standards
+globs:
+  - "**/spec/**/*.rb"
+  - "**/*_spec.rb"
+  - "**/*.test.ts"
+  - "**/*.test.tsx"
+  - "**/*.spec.ts"
+  - "**/*.spec.tsx"
+alwaysApply: false
+---
+
+# Tests
+
+- Test behavior and contracts, not private implementation details.
+- Use the cheapest test level that gives reliable evidence.
+- Use request specs for HTTP behavior, authentication, authorization, Inertia props, and API contracts.
+- For Inertia request specs, send the required headers and assert parsed props.
+- Use role and visible-text queries for user-facing React behavior.
+- Mock network calls and realtime transports in component tests.
+- Reserve system tests for critical flows that lower-level tests cannot cover.
+- Keep setup visible. Avoid long `let` chains and state shared across examples.
+- A new non-trivial class or module usually needs a focused test.
+- Cover the expected path, one meaningful edge case, and relevant failure behavior.
