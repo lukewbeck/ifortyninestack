@@ -1,0 +1,19 @@
+---
+description: Background job and external API reliability standards
+globs:
+  - "**/app/jobs/**/*.rb"
+  - "**/app/workers/**/*.rb"
+alwaysApply: false
+---
+
+# Background jobs
+
+- Pass record IDs and simple scalar values. Reload records in the worker.
+- Make retries safe and idempotent.
+- Distinguish terminal failures from retriable failures.
+- Enqueue after the database commit unless the transaction boundary is deliberate and documented.
+- If required enqueueing fails, move the domain record to an explicit failure state and return an appropriate error.
+- Add timeouts, error handling, retry rules, and safe failure states for external API calls.
+- Chunk, batch, or fan out long work when one job would be fragile.
+- Persist the user-facing write before best-effort notifications.
+- Make status and failure information visible to users and operators.
