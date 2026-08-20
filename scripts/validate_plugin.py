@@ -26,12 +26,9 @@ FORBIDDEN_QUALITY_BAR_PHRASES = (
 FORBIDDEN_COMPANY_PHRASES = (
     "ordinal",
     "breakground",
-    "heroku",
     "municipal",
     "reducto",
     "scrapingbee",
-    "eng-###",
-    "cycle tracking -",
 )
 
 

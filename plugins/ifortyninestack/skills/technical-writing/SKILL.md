@@ -54,8 +54,7 @@ Keep an absence only when a reviewer needs it to judge safety, compatibility, or
 
 For a commit:
 
-- Follow the repository commit style.
-- If the repository uses conventional commits, use `<type>(<scope>): <short imperative summary>`.
+- Use `<type>(<scope>): <short imperative summary>`.
 - Keep the subject concise and omit the final period.
 - Separate the body with a blank line.
 - Wrap the body near 72 characters.
