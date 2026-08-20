@@ -19,7 +19,7 @@ Ifortyninestack is original engineering guidance generalized for public use. The
 - [A Note About Git Commit Messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html), Tim Pope.
 - [How to Write a Git Commit Message](https://cbea.ms/git-commit/), Chris Beams.
 
-Repository commit style takes precedence over the capitalization examples in the two Git articles.
+This plugin's conventional commit format takes precedence over the capitalization examples in the two Git articles.
 
 ## Plain-language guidance
 

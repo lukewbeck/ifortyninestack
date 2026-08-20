@@ -24,6 +24,8 @@ Prefer a test, script, lint, type, or runtime check when the requirement can be 
 - Do not add a source-system workaround for missing MCP authentication.
 - Remove conflicting or obsolete guidance in the same change.
 
+This plugin ships Linear, Heroku, Rails, and React opinions. A company that wants different labels or a different ticket prefix should fork and edit those files.
+
 ## Validate
 
 Run:
@@ -43,3 +45,5 @@ For a changed workflow, run one representative prompt and confirm that the expec
 3. Run the validator.
 4. Test the local install.
 5. Open a focused pull request.
+
+Do not publish or change team marketplace settings without owner approval.

@@ -11,7 +11,7 @@
     {
       "name": "ifortyninestack",
       "source": "ifortyninestack",
-      "description": "Rails and React workflows for work intake, implementation, review, verification, and delivery."
+      "description": "Rails and React workflows for work intake, implementation, review, verification, and delivery. Assumes Linear and Heroku."
     }
   ]
 }

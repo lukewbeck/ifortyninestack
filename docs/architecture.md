@@ -2,7 +2,7 @@
 
 ## Goal
 
-Ifortyninestack gives a Rails and React engineer one installable workflow for the software development lifecycle. It must improve agent decisions without filling every session with unrelated instructions.
+Ifortyninestack gives a Rails and React engineer one installable workflow for the software development lifecycle. It ships Linear, Heroku, and conventional-commit opinions. It must improve agent decisions without filling every session with unrelated instructions.
 
 ## Layers
 
@@ -74,7 +74,7 @@ The repository remains the source of truth for runtime versions, commands, exclu
 
 ## Boundaries
 
-Cursor integrations can provide Linear, Slack, Granola, GitHub, and other source systems. Ifortyninestack does not ship an MCP server. Missing optional integrations are not blockers.
+Cursor integrations provide Linear, Slack, Granola, GitHub, and other source systems. Ifortyninestack does not ship an MCP server. Linear is the assumed issue tracker. Heroku is the assumed deploy platform. Slack and Granola are optional.
 
 Hooks for formatting, command blocking, and external writes stay out of the plugin. They need repository-specific design.
 

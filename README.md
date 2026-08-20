@@ -2,7 +2,9 @@
 
 Ifortyninestack is a Cursor plugin for Rails and React engineering. It covers work intake, system investigation, planning, implementation, slop cleanup, diagnosis, verification, review, pull requests, CI, incidents, and technical writing.
 
-Repository instructions still control repository-specific commands, architecture, and credentials.
+It ships opinions: Linear issue tracking, Heroku deploys, conventional commits, and a ticket prefix such as `ENG` or `DEV`. Repository instructions still control commands, architecture, and credentials.
+
+A company that wants this workflow should copy the repository and replace team names, ticket prefixes, and marketplace owner with its own.
 
 ## Use Ifortyninestack
 
@@ -15,14 +17,14 @@ Run the setup check after installation:
 Start a complete engineering workflow:
 
 ```text
-/ifortyninestack-mode TICKET-123 implement the accepted ticket
+/ifortyninestack-mode ENG-123 implement the accepted ticket
 ```
 
 You can also invoke a focused skill:
 
 ```text
-/work-intake TICKET-123
-/plan-change TICKET-123
+/work-intake ENG-123
+/plan-change ENG-123
 /fix-bug reproduce and fix this regression
 /deslop clean agent-generated slop on the current branch
 /review-change review the current branch
@@ -73,7 +75,16 @@ python3 scripts/validate_plugin.py
 
 Do not store secrets in this repository. If a future MCP server needs a secret, declare only the variable schema in `.cursor-plugin/plugin.json`.
 
-Linear, Slack, and Granola are optional. The plugin uses them when they are installed. GitHub Issues work when Linear is not available.
+## Fork for your company
+
+Copy this repository. Then change:
+
+- Ticket prefix examples. `ENG` is the default. Some teams use `DEV`.
+- Linear team name, if it is not yours.
+- Cycle-tracking label names, if your workspace uses different names.
+- Marketplace owner in `.cursor-plugin/marketplace.json`.
+
+Keep the Linear cycle-tracking shape unless you replace it on purpose: Commitment, Origin, and Delay Reason.
 
 ## Source layout
 

@@ -13,6 +13,8 @@
     "rails",
     "react",
     "inertia",
+    "linear",
+    "heroku",
     "code-review"
   ],
   "category": "developer-tools",
