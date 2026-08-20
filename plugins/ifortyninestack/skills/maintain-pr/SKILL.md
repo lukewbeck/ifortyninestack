@@ -11,7 +11,7 @@ Use `gh` as the source of truth for GitHub pull requests and checks. Do not merg
 
 1. Resolve the pull request for the current branch.
 2. Read the pull request description, complete diff, commits, reviews, inline comments, discussion, and check set.
-3. Read the linked Linear or GitHub issue and current acceptance criteria.
+3. Read the linked Linear issue and current acceptance criteria.
 4. Report the current blockers before you change code.
 
 ## Review feedback
@@ -44,6 +44,6 @@ For a fix, make the smallest responsible change and run the affected checks. For
 
 ## Complete
 
-Update the pull request description when tests, risks, migrations, jobs, or compatibility notes changed. Name the title and body by what landed. Keep the linked issue in the review state while the pull request is under review.
+Update the pull request description when tests, risks, migrations, jobs, or compatibility notes changed. Name the title and body by what landed. Keep the Linear issue in In Review while the pull request is under review.
 
 Return the pull request link, resolved items, open merge blockers, check status, and remaining risk. If there are no merge blockers, say the pull request is merge-ready. Do not merge it.

@@ -25,7 +25,7 @@ If the current branch has no pull request, ask for a URL or number.
 
 - Read `AGENTS.md`, nested instructions, `.cursor/BUGBOT.md`, repository rules, executable configuration, and ticket context.
 - Preserve uncommitted work, local credentials, the development database, and persistent volumes.
-- Do not merge, convert a draft to ready, enable auto-merge, deploy, write to a production remote, force-push, amend, or rewrite published history.
+- Do not merge, convert a draft to ready, enable auto-merge, deploy, use a Heroku remote, force-push, amend, or rewrite published history.
 - Do not post agent-generated findings to GitHub.
 - Do not reply to or resolve existing GitHub threads without human approval.
 - Do not expose secrets, customer data, or sensitive exploit details.

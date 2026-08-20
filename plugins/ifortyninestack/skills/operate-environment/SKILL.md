@@ -1,11 +1,13 @@
 ---
 name: operate-environment
-description: Starts, restarts, and diagnoses Rails and React development services and prepares safe production operations. Use for local setup, service health, Docker, Redis, database authentication, deploy diagnosis, deploy readiness, or runtime configuration.
+description: Starts, restarts, and diagnoses Rails and React development services and prepares safe production operations. Use for local setup, service health, Docker, Redis, database authentication, Heroku diagnosis, deploy readiness, or runtime configuration.
 ---
 
 # Operate the environment
 
 Read the repository instructions and executable configuration before you run service commands. Repository-specific commands, ports, process order, and exclusions take precedence.
+
+Assume Heroku for staging and production unless the repository documents a different platform.
 
 ## Local services
 
@@ -30,10 +32,10 @@ Read-only diagnosis can inspect logs, configuration names, release state, and he
 
 Get explicit approval for the exact app and action before:
 
-- A production or staging deploy.
+- A Heroku push or deploy.
 - A config variable change.
-- A dyno, replica, or worker scale change.
-- An addon, pipeline, or platform-resource change.
+- A dyno scale change.
+- An addon or pipeline change.
 - App or review-app creation.
 - A deploy from code that is not merged to the approved base branch.
 

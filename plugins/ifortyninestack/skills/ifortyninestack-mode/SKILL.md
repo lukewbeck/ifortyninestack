@@ -21,7 +21,7 @@ Use the smallest workflow that reaches the requested outcome. Do not run later d
 
 ## Route the work
 
-- New or updated Linear or GitHub issue: `work-intake`.
+- New or updated Linear issue: `work-intake`.
 - System walkthrough, placement question, or design history: `understand-system`.
 - Design or implementation plan: `plan-change`.
 - Feature or behavior change: `build-change`.
@@ -48,7 +48,7 @@ Use the smallest workflow that reaches the requested outcome. Do not run later d
 - Use separate reviewers for product behavior, production safety, and maintainability on substantial changes.
 - Keep the main thread focused on decisions and results. Send broad exploration to subagents.
 - Ask only for choices that require human authority. Do not ask the user to answer facts that local evidence can resolve.
-- Stop before destructive data work, breaking changes, risky security changes, deploys, production-platform writes, force pushes, or merges.
+- Stop before destructive data work, breaking changes, risky security changes, deploys, Heroku writes, force pushes, or merges.
 
 ## Completion
 

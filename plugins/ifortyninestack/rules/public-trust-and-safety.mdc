@@ -14,6 +14,6 @@ Software can affect customers, operators, records, and trust. Treat production d
 - Treat migrations, backfills, background jobs, external APIs, and deploy configuration as production risks.
 - State migration, job, operational, deploy, rollback, and compatibility impact for any relevant change.
 - Ask before destructive data work, breaking changes, non-obvious architecture changes, auth changes, public endpoints, permission changes, or cross-tenant access.
-- Ask before a deploy, a production-platform write, a force push, or any action that can affect customers.
+- Ask before a deploy, a Heroku write, a force push, or any action that can affect customers.
 - If a deploy or boot fails, stop after diagnosis. Report the failure and the proposed fix. Do not patch and redeploy without approval.
 - Never commit credentials, key files, tokens, or decrypted secrets.
